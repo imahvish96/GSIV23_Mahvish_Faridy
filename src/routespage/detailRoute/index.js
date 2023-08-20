@@ -1,8 +1,8 @@
-import Detail from '../../components/page/detail';
+import Details from '../../components/page/details';
 import {DETAIL_ROUTE} from '../../constant'
 
 const CatalogRoute = [{
-	component: Detail,
+	component: Details,
 	path: DETAIL_ROUTE,
 }];
 

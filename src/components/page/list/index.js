@@ -87,7 +87,7 @@ function List() {
   }, [loading]);
 
   const viewDetails = (id) => {
-    navigate("/detail", { state: { id } });
+    navigate("/details", { state: { id } });
   };
 
   if (!moviesList) {

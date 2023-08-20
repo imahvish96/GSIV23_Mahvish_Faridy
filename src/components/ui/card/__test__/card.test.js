@@ -8,13 +8,13 @@ const mock ={
     ...mockResponse,
     viewDetail: jest.fn(),
 }
-describe('Detail Test Case' , () => {
-  it('should renders Detail component', async () => {
+describe('Card Test Case' , () => {
+  it('should renders Card component', async () => {
     const Wrapper = render(<Card {...mock}/>);
     const linkElement = await screen.findByText(/Talk to Me/i);
     expect(linkElement).toBeInTheDocument();
   });
-  it('should renders Detail component', async () => {
+  it('should click on Card component', async () => {
     const { container } = render(<Card {...mock}/>);
     const movieCard = container.querySelector(".card");
     fireEvent.click(movieCard);

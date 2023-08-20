@@ -1,5 +1,5 @@
 export const CATALOG_ROUTE = '/'
-export const DETAIL_ROUTE = '/detail'
+export const DETAIL_ROUTE = '/details'
 
 
 //Urls

@@ -46,6 +46,10 @@ header {
     color: #9B9B9B
 }
 
+.headerTitle {
+    color: #000
+}
+
 .home {
     color: #4a4a4a;
     border: none;

@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getMoviesById } from '../../../redux/thunk';
-import styles from './detail.module.css';
+import styles from './details.module.css';
 import { baseUrlPoster } from '../../../constant';
 import Spinner from '../../ui/spinner';
 
-const Detail = () => {
+const Details = () => {
   const location = useLocation();
   const dispatch = useDispatch();
 
@@ -47,7 +47,6 @@ const Detail = () => {
     fetchmovieById();
   }, []);
 
-  console.log('TYB',movie);
   
   if (!movie) {
     return <Spinner/>;
@@ -62,7 +61,7 @@ const Detail = () => {
       <div className={styles.info}>
         <div className={styles.titleAndVote}>
           <h2 className={styles.title}>{movie.title}</h2>
-          <p>({movie.vote_average})</p>
+          <p>({Math.round(movie.vote_average * 10) / 10})</p>
         </div>
         <p className={styles.rating}>{movie.release_date} | {minutesToHHMMSS(movie.runtime)} | {castAndCrew.director}</p>
         <p className={styles.cast}> <strong>Cast:</strong> {castAndCrew.cast.join(', ')}</p>
@@ -73,4 +72,4 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default Details;

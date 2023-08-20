@@ -2,7 +2,7 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import { render } from '../../../../../test-utils'
-import Detail from '..';
+import Details from '..';
 import { mockDetailResponse } from './__mock__'
 import { getMoviesById } from '../../../../redux/thunk';
 
@@ -19,9 +19,9 @@ jest.mock('../../../../redux/thunk', () => {
 });
 
 
-describe('Detail Test Case' , () => {
-  it('should renders Detail component', async () => {
-    const Wrapper = render(<Detail />);
+describe('Details Test Case' , () => {
+  it('should renders Details component', async () => {
+    const Wrapper = render(<Details />);
     const linkElement = await screen.findByText(/Talk to Me/i);
     expect(linkElement).toBeInTheDocument();
   });
