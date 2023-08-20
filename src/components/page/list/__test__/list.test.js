@@ -2,7 +2,7 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import { render } from '../../../../../test-utils'
-import Catalog from '../index';
+import List from '../index';
 import { mock } from './__mock__/mock'
 import { getLatestMovies } from '../../../../redux/thunk';
 
@@ -18,9 +18,9 @@ jest.mock('../../../../redux/thunk', () => {
 	};
 });
 
-describe('Catalog Test Case' , () => {
-  it('should renders Catalog component', async () => {
-    const Wrapper = render(<Catalog />);
+describe('List Test Case' , () => {
+  it('should renders List component', async () => {
+    const Wrapper = render(<List />);
     const linkElement = await screen.findByText(/Talk to Me/i);
     expect(linkElement).toBeInTheDocument();
   });

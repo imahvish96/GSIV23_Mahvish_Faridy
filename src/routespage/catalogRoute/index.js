@@ -1,8 +1,8 @@
-import Catalog from '../../components/page/catalog';
+import List from '../../components/page/list';
 import {CATALOG_ROUTE} from '../../constant'
 
 const CatalogRoute = [{
-	component: Catalog,
+	component: List,
 	path: CATALOG_ROUTE,
 }];
 

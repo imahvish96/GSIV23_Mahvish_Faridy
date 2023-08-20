@@ -3,11 +3,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { unwrapResult } from "@reduxjs/toolkit";
 import { useNavigate } from "react-router-dom";
 import Card from "../../ui/card";
-import { getLatestMovies } from "./../../../redux/thunk";
+import { getLatestMovies } from "../../../redux/thunk";
 import Spinner from "../../ui/spinner";
 import styles from './style.module.css'
 
-function Catalog() {
+function List() {
   const [moviesList, setMoviewList] = useState([]);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -103,4 +103,4 @@ function Catalog() {
   );
 }
 
-export default Catalog;
+export default List;

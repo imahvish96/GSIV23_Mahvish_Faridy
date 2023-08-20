@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# GSIV23 Movie React App - Readme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instructions
 
-## Available Scripts
+To run and test the code for the Movie React App, follow these steps:
 
-In the project directory, you can run:
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using your package manager (e.g., `npm install` or `yarn install`).
+4. Run the app using the development server (e.g., `npm start` or `yarn start`).
+5. Access the app in your browser at `http://localhost:3000`.
 
-### `npm start`
+### You can also access the app on `https://gsiv23-movie-app.web.app/`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run tests:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Run unit tests using ``npm test`` or ``yarn test``.
+2. Collect Coverage using ```npm run coverage```.
 
-### `npm test`
+## Elements Done Well
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this project, I've demonstrated my proficiency in several ways:
 
-### `npm run build`
+1. **Redux Toolkit Integration:** I've used Redux Toolkit for state management. By utilizing its simplified syntax, I've effectively managed the application's global state, actions, reducers, showcasing my proficiency in modern state management techniques.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **React Router v6 Usage:** I've implemented routing using React Router v6. This allows for dynamic routing and navigation within the app while taking advantage of the latest routing features provided by React Router. I have create a routing folder we i have manger to configure base routing.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Component Structure:** I've organized the components into a logical structure, adhering to best practices for component-based development. This enhances code maintainability and readability.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **API Integration with Axios:** I've used Axios to make API requests to fetch movie data. This demonstrates my ability to handle asynchronous operations and integrate external data sources into the app.
 
-### `npm run eject`
+5. **Testing with Jest and React Testing Library:** I've included unit tests for key components using Jest and React Testing Library. This indicates my commitment to writing robust and testable code.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+6. **Integration of React Icons:** I've integrated React Icons to enhance the visual appeal of the app. This showcases my ability to incorporate third-party libraries and improve the user interface. As provied in guids i have only used material icons. Reason i have used the react-icon package to just make it simple and without adding material-ui library bundle.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Potential Improvements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If I had an additional 4 hours, I would focus on the following improvements:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Enhanced UI/UX:** I would dedicate time to refining the user interface, adding animations, transitions, and optimizing the layout to create a more visually appealing and user-friendly experience.
 
-## Learn More
+2. **Error Handling:** I would implement comprehensive error handling for API requests and unexpected scenarios. This would provide users with better feedback in case of errors.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Integration Testing:** I would expand the test suite to include integration tests to ensure that various parts of the app work seamlessly together.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Accessibility Improvements:** I would ensure the app adheres to accessibility standards, making it usable for a wider audience.
 
-### Code Splitting
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The challenge was a great opportunity to showcase my skills with the specified libraries. Adding a real-world scenario or user stories to the challenge could make it even more engaging and valuable for assessing practical proficiency.
 
-### Analyzing the Bundle Size
+Thank you for the chance to complete this challenge!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
