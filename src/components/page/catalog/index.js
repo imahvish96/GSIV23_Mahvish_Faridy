@@ -30,9 +30,14 @@ function Catalog() {
    * fetchData only fetch data from the tmdb api through redux action
    */
   const fetchData = async () => {
-    const payload = await dispatch(getLatestMovies(page)).then(unwrapResult);
-    setMoviewList((prevData) => [...prevData, ...payload.results]);
-    setLoading(false)
+    try {
+      const payload = await dispatch(getLatestMovies(page)).then(unwrapResult);
+      setMoviewList((prevData) => [...prevData, ...payload.data.results]);
+      setLoading(false)
+    } catch(error) {
+      console.log(error);
+    }
+    
   };
 
   useEffect(() => {
