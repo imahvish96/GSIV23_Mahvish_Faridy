@@ -26,13 +26,19 @@ function List() {
     setShowDefault(false);
   }
 
+
+  const sortMoviesByLatestFirst = (movies) => {
+    return movies.slice().sort((a, b) => new Date(b.release_date) - new Date(a.release_date));
+  }
+
   /**
    * fetchData only fetch data from the tmdb api through redux action
    */
   const fetchData = async () => {
     try {
       const payload = await dispatch(getLatestMovies(page)).then(unwrapResult);
-      setMoviewList((prevData) => [...prevData, ...payload.data.results]);
+      const sortedResult = sortMoviesByLatestFirst(payload.data.results);
+      setMoviewList((prevData) => [...prevData, ...sortedResult]);
       setLoading(false)
     } catch(error) {
       console.log(error);
