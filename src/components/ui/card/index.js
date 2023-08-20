@@ -16,7 +16,7 @@ const MovieCard = (props) => {
       <div className={styles.infoWrapper}>
         <div className={styles.titleAndVote}>
           <h2 className={styles.title}>{title}</h2>
-          <span className={styles.voteAverage}>{vote_average}</span>
+          <span className={styles.voteAverage}>{Math.round(vote_average * 10) / 10}</span>
         </div>
         <p className={styles.overview}>{overview}</p>
       </div>
